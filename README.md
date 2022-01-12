@@ -33,6 +33,6 @@ Everything in PUBLIC file is going to be directly accessible from the browser.
   Follow: \
   the name convention if you want to import directly in a page: "Home.module.css" 
 
-#### Important things to remeber:
+#### Important things to remember:
 1. components folder shouldn't be inside pages because are not going to need routes
 2. convention: lowercase for pages and uppercase for components.
