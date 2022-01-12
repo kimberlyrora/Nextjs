@@ -32,6 +32,10 @@ Everything in PUBLIC file is going to be directly accessible from the browser.
 
   Follow: \
   the name convention if you want to import directly in a page: "Home.module.css" 
+  
+##### Custom document:
+  For augment html and body tags. If u want to override the default Document, create the file '.pages/_Document.js' \
+  You can use it to add lang attributes, it is rendered on server, so you can't use onclick or dynamic things in this file. Just don't try to mess with this.
 
 #### Important things to remember:
 1. components folder shouldn't be inside pages because are not going to need routes
