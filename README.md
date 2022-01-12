@@ -1,25 +1,34 @@
 # Nextjs
-Learning Nextjs
+  Learning Nextjs \
+  Resource: https://www.youtube.com/watch?v=mTz0GXj8NN0&t=2s 
 
-What is Nextjs?
-react framework created by Vercel, allows ssr ans ssg
+#### What is Nextjs?
+React framework created by Vercel, allows ssr ans ssg 
 
+##### Benefits: 
+1. SEO
+2. Performance
+3. Easier to page routing
+4. API Routes
+5. TS & Sass
+6. SSG(Next export)
+7. Easy deployment
 
-Benefits:
-SEO
-Performance
-Easier to page routing
-API Routes
-TS & Sass
-SSG(Next export)
-Easy deployment
-
+Tiny things I learned: \
 Everything in PUBLIC file is going to be directly accessible from the browser.
 
+##### Setup:
+  npx create-next-app@latest [name project]
 
-Yo can't:
-Import global.css directly in page, you have to do it in _app.js
+##### Pages and Routings:
+  All files added to pages folder are going to route accessible.
+  
+##### Head:
+  To define metatags, title, keywords 
 
+##### CSS:
+  You can't: \
+  Import global.css directly in page, you have to do it in _app.js 
 
-Follow:
-the name convention if you want to import directly in a page: "Home.module.css"
+  Follow: \
+  the name convention if you want to import directly in a page: "Home.module.css" 
