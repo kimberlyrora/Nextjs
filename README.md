@@ -56,6 +56,21 @@ Everything in PUBLIC file is going to be directly accessible from the browser.
             }
           }
       ```
+   2. getServerSideProps: allows access to a context so that way we can use it to set dynamic paths, allow us fetching data on every request, which is slower
+      You should use getServerSideProps when:
+        - Only if you need to pre-render a page whose data must be fetched at request time
+      ```js
+         Syntax: 
+          export const getServerSideProps = async (ctx) => {
+            const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${ctx.params.id}`)
+            const article = await res.json()  // your fetch function here 
+            return {
+              props:{
+                article
+              }
+            }
+          }
+      ```
 
 #### Important things to remember:
 1. components folder shouldn't be inside pages because are not going to need routes
