@@ -1,12 +1,14 @@
 import React from 'react'
 import Head from 'next/head'
+import Meta from '../components/Meta'
 
 const about = () => {
 	return (
 		<div>
-			<Head>
+			<Meta title='About' />
+			{/*<Head>
 			<title>about</title>
-			</Head>
+			</Head>*/}
 			<h1>About</h1>
 		</div>
 	)

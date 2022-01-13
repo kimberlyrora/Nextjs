@@ -6,10 +6,10 @@ import ArticleList from '../components/ArticleList.js';
 export default function Home({articles}) {
   return (
     <div>
-		<Head>
+		{/*<Head>
 			<title>WebDev Newz</title>
 			<meta name="keywords" content="web development, programming"></meta>
-		</Head>
+		</Head>*/}
 		<ArticleList articles={articles} />
     </div>
   )

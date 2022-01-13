@@ -2,12 +2,14 @@
 // convention: lowercase for pages and uppercase for components.
 
 import React from 'react';
+import Meta from './Meta'
 import Nav from '../components/Nav';
 import Header from '../components/Header';
 import styles from '../styles/Layout.module.css';
 const Layout = ({children}) => {
 	return (
 		<>
+			<Meta />
 			<Nav />
 			<div className={styles.container}>
 				<main className={styles.main}>
