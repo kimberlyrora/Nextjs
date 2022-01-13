@@ -13,6 +13,8 @@ const article = ({article}) => {
 	)
 }
 
+// You should use getServerSideProps when:
+// - Only if you need to pre-render a page whose data must be fetched at request time
 export const getServerSideProps = async (ctx) => {
 	const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${ctx.params.id}`)
 	const article = await res.json()  // your fetch function here 
