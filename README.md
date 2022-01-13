@@ -71,6 +71,23 @@ Everything in PUBLIC file is going to be directly accessible from the browser.
             }
           }
       ```
+  3. getStaticPaths: dynamically generate paths base on data fetching
+      You should use getStaticPaths when:
+        - you’re statically pre-rendering pages that use dynamic routes
+      ```js
+         Syntax: 
+          export const getStaticPaths = async (ctx) => {
+            const res = await fetch(`https://jsonplaceholder.typicode.com/posts`)
+            const articles = await res.json()  // your fetch function here
+
+            const ids = articles.map(article => article.id)
+            const paths = ids.map(id => ({params: {id: id.toString()}}))
+            return {
+              paths,
+              fallback: false,
+            }
+          }
+      ```
 
 #### Important things to remember:
 1. components folder shouldn't be inside pages because are not going to need routes
